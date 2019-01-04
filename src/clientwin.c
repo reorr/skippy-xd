@@ -498,7 +498,7 @@ clientwin_handle(ClientWin *cw, XEvent *ev) {
 			};
 			const keydef_t KEY_PREV = {
 				.key = XKeysymToKeycode(ps->dpy, XK_Tab),
-				.mod = KEYMOD_CTRL | KEYMOD_SHIFT,
+				.mod = KEYMOD_CTRL,
 			};
 
 			if (evk->keycode == cw->mainwin->key_up ||
