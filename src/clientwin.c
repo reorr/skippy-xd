@@ -514,7 +514,8 @@ clientwin_handle(ClientWin *cw, XEvent *ev) {
 					evk->keycode == cw->mainwin->key_l)
 				focus_right(cw);
 			else if (evk->keycode == cw->mainwin->key_enter
-					|| evk->keycode == cw->mainwin->key_space) {
+					|| evk->keycode == cw->mainwin->key_space
+					|| evk->keycode == cw->mainwin->key_alt) {
 				mw->client_to_focus = cw;
 				return 1;
 			}

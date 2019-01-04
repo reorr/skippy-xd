@@ -53,7 +53,7 @@ struct _mainwin_t {
 	
 	KeyCode key_act, key_up, key_down, key_left, key_right,
 		key_h, key_j, key_k, key_l,
-		key_enter, key_space, key_q, key_escape;
+		key_enter, key_alt, key_space, key_q, key_escape;
 	
 #ifdef CFG_XINERAMA
 	int xin_screens;
