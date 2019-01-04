@@ -494,7 +494,7 @@ clientwin_handle(ClientWin *cw, XEvent *ev) {
 		if (cw->mainwin->pressed_key) {
 			const keydef_t KEY_NEXT = {
 				.key = XKeysymToKeycode(ps->dpy, XK_Tab),
-				.mod = KEYMOD_CTRL,
+				.mod = KEYMOD_META,
 			};
 			const keydef_t KEY_PREV = {
 				.key = XKeysymToKeycode(ps->dpy, XK_Tab),
